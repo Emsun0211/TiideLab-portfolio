@@ -165,7 +165,7 @@ main{
 }
 .pills-wrapper{
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 .place-of-work-pills{
     background-color: #000;
@@ -235,6 +235,9 @@ main{
 }
 
 /*CHROME WEBKIT*/
+.progress-bar-wrapper{
+    width: 100%;
+}
 .stack-progress::-webkit-progress-bar{
     background-color: #fff;
     border-radius: 100%;
@@ -255,7 +258,7 @@ main{
 
 .progress-section{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
@@ -265,9 +268,15 @@ main{
 }
 /*SERVICES CONTENT*/
 .service-section{
-    padding: 40px 20px;
-    min-width: 300px;
+    padding: 40px;
+    width: 100vw;
     background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 .service-section h2{
     color: #fff;
@@ -276,7 +285,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 
 }
 .service-card{
@@ -314,7 +323,16 @@ font-size: 14px;
     box-shadow: 0 10px 8px 0 rgba(255, 255, 255, 0.6);
     background-color: #fff;
 }
-@media  screen and (max-width: 600px)  {
+
+@media screen and (max-width: 480px) {
+    .progress-bar-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media  screen and (max-width: 600px) {
     header{
         background-image: url(https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
         background-size: cover;
@@ -323,18 +341,21 @@ font-size: 14px;
         height: 110vh;
         position: relative;
     }
+    
     .service-wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    
+        width: 100%;
     } 
+    
     .pills-wrapper{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
+
     }
     .header-wrapper{
         z-index: 1;
@@ -350,6 +371,49 @@ font-size: 14px;
         display: block;
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+    .progress-bar-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    body{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .service-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+    
+    }
+    body{
+        width: 100%;
+    }
+    .pills-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .navlinks{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .service-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
     }
 }
 
