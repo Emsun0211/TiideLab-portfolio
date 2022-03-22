@@ -379,6 +379,12 @@ font-size: 14px;
         flex-direction: column;
         margin-left: 20px;
     }
+    .progress-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     body{
         width: 100%;
     }
