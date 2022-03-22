@@ -83,10 +83,10 @@ a.navlinks.active{
     width: 100px;
     border-radius: 50%;
 }
-.social-wrapper{
+.social-wrapper a{
     color: #ffff;
 }
-.social-wrapper svg{
+.social-wrapper  svg{
     margin: 10px;
     padding: 5px;
     width: 40px;
