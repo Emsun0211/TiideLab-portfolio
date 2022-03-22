@@ -16,7 +16,7 @@ header{
     background-image: url(https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     background-size: cover;
     background-position: 50%;
-    /*background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 80vh;
     position: relative;
 }
@@ -340,6 +340,7 @@ font-size: 14px;
         background-repeat: no-repeat;
         height: 110vh;
         position: relative;
+        width: 100%;
     }
     
     .service-wrapper{
@@ -347,7 +348,6 @@ font-size: 14px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
     } 
     
     .pills-wrapper{
@@ -361,7 +361,7 @@ font-size: 14px;
         z-index: 1;
         position: relative;
         display: flex;
-        /*justify-content: space-between;*/
+        justify-content: space-between;
         align-items: center;
         padding: 1.2rem 4rem;
         flex-direction: column;
@@ -386,7 +386,8 @@ font-size: 14px;
         flex-direction: column;
     }
     body{
-        width: 100%;
+        width: fit-content;
+        overflow-x: hidden;
     }
 }
 
